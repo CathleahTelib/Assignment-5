@@ -16,5 +16,3 @@ else:
         min=number3
     else:
         print("Number 1 is the smallest number")
-
-# print(min,"is the smallest number.")
