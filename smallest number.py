@@ -1,18 +1,14 @@
-def three_numbers():
-    n1= int(input("1st number:"))
-    n2= int(input("2nd number:"))
-    n3= int(input("3rd number:"))
-    return n1,n2,n3
+n1= int(input("1st number:"))
+n2= int(input("2nd number:"))
+n3= int(input("3rd number:"))
 
-number1,number2,number3= three_numbers()
+smallest = 0
 
-min = number1
-if number2<min:
-    print("Number 2 is the smallest number")
-    min=number2
+if n1 < n2 and n1 < n3:
+    smallest = n1
 else:
-    if number3<min:
-        print("Number 3 is the smallest number")
-        min=number3
+    if n2 < n3:
+        smallest = n2
     else:
-        print("Number 1 is the smallest number")
+            smallest = n3
+print(smallest, "is the smallest of three numbers.")
